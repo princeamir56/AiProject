@@ -2,7 +2,6 @@
 
 A full-stack machine learning application for predicting house prices. Built with React, FastAPI, and scikit-learn.
 
-![House Price Predictor](https://via.placeholder.com/800x400?text=House+Price+Predictor)
 
 ## 🚀 Features
 
