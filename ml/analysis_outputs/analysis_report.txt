@@ -1,0 +1,40 @@
+================================================================================
+RAPPORT D'ANALYSE EXPLORATOIRE - AMES HOUSING DATASET
+================================================================================
+
+JUSTIFICATION DU CHOIX DU DATASET
+----------------------------------------
+
+Le jeu de données Ames Housing (Kaggle) a été choisi pour les raisons suivantes:
+
+1. PERTINENCE: Ce dataset est parfaitement adapté à un problème de régression
+   pour la prédiction de prix immobiliers, correspondant à l'objectif du projet.
+
+2. RICHESSE: Avec 81 variables décrivant divers aspects des propriétés 
+   (surface, qualité, localisation, etc.), il permet une modélisation complète.
+
+3. TAILLE: 1460 observations offrent suffisamment de données pour 
+   l'entraînement et la validation des modèles.
+
+4. QUALITÉ: Dataset bien documenté, largement utilisé dans la communauté ML,
+   avec un bon équilibre entre variables numériques et catégorielles.
+
+5. SOURCE FIABLE: Provenant de Kaggle, une source reconnue pour les datasets
+   de machine learning.
+
+
+DESCRIPTION DU DATASET
+----------------------------------------
+  • Nombre d'instances: 1460
+  • Nombre d'attributs: 81
+  • Variable cible: SalePrice (numérique continue)
+  • Variables numériques: 38
+  • Variables catégorielles: 43
+
+
+STATISTIQUES DE LA VARIABLE CIBLE
+----------------------------------------
+  • Minimum: $34,900
+  • Maximum: $755,000
+  • Moyenne: $180,921
+  • Médiane: $163,000

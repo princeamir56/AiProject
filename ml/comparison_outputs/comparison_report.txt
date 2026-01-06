@@ -1,0 +1,59 @@
+================================================================================
+RAPPORT DE COMPARAISON DES MODÈLES DE MACHINE LEARNING
+================================================================================
+
+MODÈLES IMPLÉMENTÉS
+----------------------------------------
+
+1. GRADIENT BOOSTING REGRESSOR
+   Famille: Ensemble Learning (Boosting)
+   Hyperparamètres:
+     - n_estimators: 200
+     - max_depth: 5
+     - learning_rate: 0.1
+   Justification: Méthode d'ensemble qui construit séquentiellement
+   des arbres de décision, chacun corrigeant les erreurs du précédent.
+   Excellent pour capturer les relations non-linéaires complexes.
+
+2. RANDOM FOREST REGRESSOR
+   Famille: Ensemble Learning (Bagging)
+   Hyperparamètres:
+     - n_estimators: 200
+     - max_depth: 15
+     - max_features: sqrt
+   Justification: Agrège les prédictions de multiples arbres indépendants.
+   Robuste aux outliers et fournit une mesure d'importance des features.
+
+3. RIDGE REGRESSION
+   Famille: Régression linéaire régularisée (L2)
+   Hyperparamètres:
+     - alpha: 10
+   Justification: Modèle linéaire simple avec régularisation L2.
+   Gère bien la multicolinéarité et sert de baseline interprétable.
+
+
+RÉSULTATS
+----------------------------------------
+
+GradientBoosting:
+  - Test RMSE: $22,308
+  - Test R²: 0.9099
+  - CV RMSE: $27,354 (±$4,295)
+
+RandomForest:
+  - Test RMSE: $25,134
+  - Test R²: 0.8856
+  - CV RMSE: $29,555 (±$4,222)
+
+Ridge:
+  - Test RMSE: $26,686
+  - Test R²: 0.8711
+  - CV RMSE: $28,817 (±$2,807)
+
+
+🏆 MEILLEUR MODÈLE RETENU: GradientBoosting
+----------------------------------------
+Ce modèle a été sélectionné car il présente:
+  - Le meilleur RMSE sur les données de test
+  - Un bon score R² (0.9099)
+  - Une bonne généralisation (faible overfitting)

@@ -1,0 +1,39 @@
+{
+  "model_name": "GradientBoosting",
+  "version": "20251220_180804",
+  "metrics": {
+    "train_rmse": 7096.2153323892235,
+    "test_rmse": 22307.82098385199,
+    "train_mae": 5223.037492000652,
+    "test_mae": 15841.495945395054,
+    "train_r2": 0.9922686528160451,
+    "test_r2": 0.90990886320815,
+    "cv_rmse": 27354.12880305168,
+    "cv_std": 4294.894578498771
+  },
+  "features": {
+    "numeric": [
+      "OverallQual",
+      "OverallCond",
+      "YearBuilt",
+      "YearRemodAdd",
+      "TotalBsmtSF",
+      "GrLivArea",
+      "FullBath",
+      "HalfBath",
+      "BedroomAbvGr",
+      "TotRmsAbvGrd",
+      "Fireplaces",
+      "GarageCars",
+      "GarageArea"
+    ],
+    "categorical": [
+      "MSZoning",
+      "Neighborhood",
+      "BldgType",
+      "HouseStyle",
+      "CentralAir",
+      "KitchenQual"
+    ]
+  }
+}
